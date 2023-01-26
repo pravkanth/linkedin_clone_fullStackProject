@@ -1,0 +1,16 @@
+1) Create two folders Client and servers
+2) Client side -> Create react app (npm install axios moment react-file-base64 react-redux redux redux-thunk)
+3) Server side -> npm init and then (npm install body-parser cors express mongoose and nodemon)
+4) Import them all(Server)
+5) In package.json write "type":"module" and script :{ "start":"nodemon index.js"}
+6) Initialise app
+7) app.use(bodyParser.json({limit:"30mb",extended:true}));
+   app.use(bodyParser.urlencoded({limit:"30mb",extended:true}));
+8) app.use(cors())
+9) goto mongodb cloud atlas create database acess,network access and click connect and copy the link and paste it in vscode
+10) const port = process.env.PORT || 5000;
+11) mongoose.connect(URL,{useNew....:true,useunified...:true})
+    .then(()=>{app.Listen(Port,()=.{console.log("Running at",port)})})
+    .catch((err)=>{console.log(error)})
+12) mongoose.set("useFindAndModify",false)// it makes sure we dont get any warning in console
+13) Run and check using npm start
